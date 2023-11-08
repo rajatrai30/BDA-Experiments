@@ -1,0 +1,7 @@
+MapReduce is a programming model and data processing framework designed for parallel and distributed computing. It divides data processing tasks into two stages: mapping data into key-value pairs, and then reducing those pairs to produce a final result, making it suitable for large-scale data processing.
+
+Map Reduce algorithm:
+Input is breakdown to the smaller units that could be processed furthur. Each input is transformed to an intermediate key value pair. These intermediate key pairs are grouped by a condition and provided to the reduce. Each group contains key and the list of values corresponding to the key. Reduce then consolidate these list of values to a single value. Thus generating output key pair values.
+
+word count problem using map reduce:
+Text data is split into smaller parts, and a Map function processes and counts the words in parallel. The Shuffling and Sorting phase organizes the data, and the Reduce function aggregates the word counts. This approach efficiently handles large text datasets in a distributed computing environment, minimizing data transfer and maximizing parallelism.
